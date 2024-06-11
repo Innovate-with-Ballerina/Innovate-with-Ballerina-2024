@@ -1,4 +1,4 @@
-import './hero.css';
+import '../Stylesheets/hero.css'
 
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";

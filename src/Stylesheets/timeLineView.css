@@ -1,0 +1,15 @@
+/* timeLineView.css */
+.full-screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E9E9E9;
+    gap: 20px; /* Adjust the gap as needed */
+    overflow-y: scroll;
+}
+
+.full-screen-container .time-line-card {
+    margin-bottom: 20px; /* Add some space between the cards */
+}

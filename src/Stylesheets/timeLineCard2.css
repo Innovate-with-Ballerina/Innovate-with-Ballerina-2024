@@ -1,0 +1,62 @@
+.time-line-card2 {
+    width: 400px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 11.293px;
+    background: #292929;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family:'Space Grotesk', sans-serif ;
+  }
+  
+  .time-line-card2 .date {
+    position: absolute;
+    top: 4%;
+    left: 6%;
+    
+   
+    font-size: 15.757px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 101%; /* 19.955px */
+    letter-spacing: 0.198px;
+    text-transform: capitalize;
+  }
+  
+  .time-line-card2 .day {
+    margin-top: 32.2px;
+    margin-right: 50%;
+    color: #E9E9E9;
+    font-family: "Space Grotesk";
+    font-size: 139.82px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101%; /* 161.418px */
+    letter-spacing: 1.598px;
+    text-transform: capitalize;
+   
+  }
+  
+  .time-line-card2 .text {
+    margin-left:70px;
+    margin-right: 8px;
+    font-size: 24px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 101%; /* 33.402px */
+    letter-spacing: 0.331px;
+    text-transform: capitalize;
+
+    
+  }
+
+
+  .time-line-card2 .inner-card{
+    display: flex;
+    flex-direction: row;
+
+  }

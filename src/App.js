@@ -1,8 +1,14 @@
+import React from "react";
+import TimeLineCard from "./Components/TimeLineCard1";
+import TimeLineView from "./Views/TimeLineView";
+
+
 
 function App() {
   return (
     <div>
-      <h1>Innovate with Ballerina 2024</h1>
+      <TimeLineView/>
+   
     </div>
   );
 }
