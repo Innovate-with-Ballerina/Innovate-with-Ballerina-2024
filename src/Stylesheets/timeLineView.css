@@ -1,88 +1,135 @@
-/* timeLineView.css */
 .full-screen-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: #E9E9E9;
-    gap: 20px; /* Adjust the gap as needed */
-
+    gap: 20px;
+    /* Adjust the gap as needed */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.inner-container{
-    width: 80%; /* Adjust width as needed */
-    background-color: #fff; /* Optional: Set a background color for visibility */
-    padding: 20px; /* Padding inside the inner container */
-    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
-    
-}
-.card1{
-    margin: 5% 5% 5% -25%; /* top, right, bottom, left */
-    width: 100%; /* Make the card as wide as the screen */
+
+
+.inner-container {
+    margin-top: 7%;
+    width: 80%;
+    /* Adjust width as needed */
+    padding: 20px;
+    /* Padding inside the inner container */
+    border-radius: 10px;
+    /* Optional: Add border-radius for rounded corners */
+   
+    background: url('../assets/dottedline.svg') no-repeat center 45%;
+    background-size: auto;
+    z-index: 2;
+    position: relative;
     display: flex;
-    justify-content: center; /* Align content to the left */
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card2{
-    margin: 5%;
-    width: 100%; /* Make the card as wide as the screen */
+.card {
+    width: 100%;
+    /* Make the card as wide as the screen */
     display: flex;
-    justify-content:center; /* Align content to the left */
+    justify-content: center;
+    /* Align content to the center */
+    position: relative;
+    z-index: 3;
+    /* Ensure it stays above the background */
 }
 
-.card3{
-    margin: 5% 10% 5% 30%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+/* Define card-specific margins here */
+.card1 {
+    margin: 5% 5% 5% -25%;
 }
 
-.card4{
-    margin: 5% 10% 5% -15%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+/* top right bottom left*/
+.card2 {
+    margin: -4% 5% 5% 12%;
 }
 
-
-.card5{
-    margin: 6% 5% 5% 10%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+.card3 {
+    margin: 2% 10% 5% 26%;
 }
 
-.card6{
-    margin: 6% 5% 5% 35%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+.card4 {
+    margin: -1% 10% 5% -13%;
 }
 
-.card7{
-    margin: 5% 5% 5% -10%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+.card5 {
+    margin: 3% 5% 5% 10%;
 }
 
-.card8{
-    margin: 5% 7% 5% 15%;
-    width: 100%; /* Make the card as wide as the screen */
-    display: flex;
-    justify-content:center; /* Align content to the left */
+.card6 {
+    margin: -3% 5% 5% 31%;
 }
 
+.card7 {
+    margin: 0% 5% 5% 0%;
+}
 
+.card8 {
+    margin: -1% 7% 5% 22%;
+}
 
 .path1 {
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0; /* Ensure it stays behind the cards */
-    transform: rotate(180deg); /* Rotate 90 degrees */
+    z-index: 0;
+    /* Ensure it stays behind the cards */
+}
+
+.text-background {
+    color: #292929;
+    font-family: "Space Grotesk";
+    font-size: 244px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101%;
+    /* 347.44px */
+    letter-spacing: 3.44px;
+    text-transform: capitalize;
+    opacity: 0.06;
+    position: absolute;
+    
+}
+
+
+.text-background-div1 {
+    
+    position: absolute;
+    top: 0%;
+    left: 5%;
+}
+
+
+.text-background-div2 {
+    
+    position: absolute;
+    top: 16%;
+    left: 20%;
+}
+
+
+
+.text-background-div3 {
+    
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+
+.text-background-div4 {
+    
+    position: absolute;
+    top: 70%;
+    left: 15%;
 }

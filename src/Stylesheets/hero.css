@@ -6,6 +6,7 @@
     height : 100vh;
     color: white;
     justify-content: center;
+    z-index: 3;
   
   }
   
