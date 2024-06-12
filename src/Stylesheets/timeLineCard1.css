@@ -1,6 +1,6 @@
 .time-line-card {
-    width: 400px;
-    height: 120px;
+    width: 350px;
+    height: 100px;
     flex-shrink: 0;
     border-radius: 11.293px;
     background: #292929;
@@ -18,7 +18,7 @@
     right: 33%;
     margin-top: 22px;
    
-    font-size: 19.757px;
+    font-size: 14.757px;
     font-style: normal;
     font-weight: 500;
     line-height: 101%; /* 19.955px */
@@ -27,11 +27,11 @@
   }
   
   .time-line-card .day {
-    margin-top: 32.2px;
-    margin-right: -20px;
+    margin-top: 30.2px;
+    margin-right: -18px;
     color: #E9E9E9;
     font-family: "Space Grotesk";
-    font-size: 149.82px;
+    font-size: 129.82px;
     font-style: normal;
     font-weight: 700;
     line-height: 101%; /* 161.418px */
@@ -42,7 +42,7 @@
   
   .time-line-card .text {
     margin-left: 12px;
-    margin-right: 90px;
+    margin-right: 50px;
     font-size: 24px;
     color: #FFF;
     font-style: normal;

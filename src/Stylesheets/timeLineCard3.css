@@ -1,6 +1,6 @@
 .time-line-card3 {
-    width: 400px;
-    height: 120px;
+    width: 350px;
+    height: 100px;
     flex-shrink: 0;
     border-radius: 11.293px;
     background: #292929;
@@ -15,7 +15,7 @@
   .time-line-card3 .date {
     position: absolute;
     top: 12%;
-    left: 41%;
+    left: 39%;
     
    
     font-size: 15.757px;
@@ -31,7 +31,7 @@
     margin-right: 50%;
     color: #E9E9E9;
     font-family: "Space Grotesk";
-    font-size: 139.82px;
+    font-size: 119.82px;
     font-style: normal;
     font-weight: 700;
     line-height: 101%; /* 161.418px */
