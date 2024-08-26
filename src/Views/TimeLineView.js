@@ -33,45 +33,59 @@ export default function TimeLineView() {
     }, [visibleCard, controls]);
 
     return (
-        <div className="full-screen-container">
-            <div className='text-background-div1'>
-                <p className='text-background'>Stay  </p>
+        <>
+            <div className="full-screen-container">
+                <div className='text-background-div1'>
+                    <p className='text-background'>Stay  </p>
+                </div>
+                <div className='text-background-div2'>
+                    <p className='text-background'>Updated  </p>
+                </div>
+                <div className='text-background-div3'>
+                    <p className='text-background'>Stay</p>
+                </div>
+                <div className='text-background-div4'>
+                    <p className='text-background'>Updated  </p>
+                </div>
+                <div className="inner-container">
+                    <motion.div className={`card card1`} animate={visibleCard >= 1 ? controls : { opacity: 0 }}>
+                        <TimeLineCard1 text={"Starting Registration"} month={"JUNE"} day={"15"} />
+                    </motion.div>
+                    <motion.div className={`card card2`} animate={visibleCard >= 2 ? controls : { opacity: 0 }}>
+                        <TimeLineCard2 text={"Closing Registrations"} month={"JULY"} day={"6"} />
+                    </motion.div>
+                    <motion.div className={`card card3`} animate={visibleCard >= 3 ? controls : { opacity: 0 }}>
+                        <TimeLineCard2 text={"Case Study Publishing"} month={"JULY"} day={"10"} />
+                    </motion.div>
+                    <motion.div className={`card card4`} animate={visibleCard >= 4 ? controls : { opacity: 0 }}>
+                        <TimeLineCard1 text={"Workshop 02"} month={"JULY"} day={"15"} />
+                    </motion.div>
+                    <motion.div className={`card card5`} animate={visibleCard >= 5 ? controls : { opacity: 0 }}>
+                        <TimeLineCard3 text={"Workshop 02"} month={"JULY"} day={"18"} />
+                    </motion.div>
+                    <motion.div className={`card card6`} animate={visibleCard >= 6 ? controls : { opacity: 0 }}>
+                        <TimeLineCard1 text={"Opening Submissions"} month={"JULY"} day={"19"} />
+                    </motion.div>
+                    <motion.div className={`card card7`} animate={visibleCard >= 7 ? controls : { opacity: 0 }}>
+                        <TimeLineCard3 text={"Workshop 03"} month={"JULY"} day={"25"} />
+                    </motion.div>
+                    <motion.div className={`card card8`} animate={visibleCard >= 8 ? controls : { opacity: 0 }}>
+                        <TimeLineCard1 text={"Closing Submissions"} month={"AUGUST"} day={"18"} />
+                    </motion.div>
+                </div>
+
             </div>
-            <div className='text-background-div2'>
-                <p className='text-background'>Updated  </p>
+            <div className='paraSec'>
+                <div className="paraSec-sub">
+                    <p className='header'> Register Today </p>
+                    <p className="para">Join the "Innovate with Ballerina" competition to empower your coding proficiency and entrepreneurial spirit! Gain invaluable experience and contribute to shaping the future of technology. Secure your spot today and embark on an inspiring journey of learning and discovery.</p>
+
+                </div>
+                <div className='buttonSection'>
+                    <button className='button-filled button-filled-text'>Register Now</button>
+                    <button className='button-outlined button-outlined-text'>Download Booklet</button>
+                </div>
             </div>
-            <div className='text-background-div3'>
-                <p className='text-background'>Stay</p>
-            </div>
-            <div className='text-background-div4'>
-                <p className='text-background'>Updated  </p>
-            </div>
-            <div className="inner-container">
-                <motion.div className={`card card1`} animate={visibleCard >= 1 ? controls : { opacity: 0 }}>
-                    <TimeLineCard1 text={"Starting Registration"} month={"JUNE"} day={"15"} />
-                </motion.div>
-                <motion.div className={`card card2`} animate={visibleCard >= 2 ? controls : { opacity: 0 }}>
-                    <TimeLineCard2 text={"Closing Registrations"} month={"JULY"} day={"6"} />
-                </motion.div>
-                <motion.div className={`card card3`} animate={visibleCard >= 3 ? controls : { opacity: 0 }}>
-                    <TimeLineCard2 text={"Case Study Publishing"} month={"JULY"} day={"10"} />
-                </motion.div>
-                <motion.div className={`card card4`} animate={visibleCard >= 4 ? controls : { opacity: 0 }}>
-                    <TimeLineCard1 text={"Workshop 02"} month={"JULY"} day={"15"} />
-                </motion.div>
-                <motion.div className={`card card5`} animate={visibleCard >= 5 ? controls : { opacity: 0 }}>
-                    <TimeLineCard3 text={"Workshop 02"} month={"JULY"} day={"18"} />
-                </motion.div>
-                <motion.div className={`card card6`} animate={visibleCard >= 6 ? controls : { opacity: 0 }}>
-                    <TimeLineCard1 text={"Opening Submissions"} month={"JULY"} day={"19"} />
-                </motion.div>
-                <motion.div className={`card card7`} animate={visibleCard >= 7 ? controls : { opacity: 0 }}>
-                    <TimeLineCard3 text={"Workshop 03"} month={"JULY"} day={"25"} />
-                </motion.div>
-                <motion.div className={`card card8`} animate={visibleCard >= 8 ? controls : { opacity: 0 }}>
-                    <TimeLineCard1 text={"Closing Submissions"} month={"AUGUST"} day={"18"} />
-                </motion.div>
-            </div>
-        </div>
+        </>
     );
 }
