@@ -1,5 +1,5 @@
 .time-line-card3 {
-    width: 350px;
+    width: 300px;
     height: 100px;
     flex-shrink: 0;
     border-radius: 11.293px;
@@ -12,21 +12,25 @@
     font-family:'Space Grotesk', sans-serif ;
   }
   
+  @media (min-width: 1024px) {
+    .time-line-card3 {
+        width: 350px; 
+    }
+  }
+  
   .time-line-card3 .date {
     position: absolute;
     top: 12%;
     left: 39%;
-    
-   
     font-size: 15.757px;
     font-style: normal;
     font-weight: 500;
     line-height: 101%; /* 19.955px */
     letter-spacing: 0.198px;
     text-transform: capitalize;
-  }
-  
-  .time-line-card3 .day {
+}
+
+.time-line-card3 .day {
     margin-top: 32.2px;
     margin-right: 50%;
     color: #E9E9E9;
@@ -37,11 +41,10 @@
     line-height: 101%; /* 161.418px */
     letter-spacing: 1.598px;
     text-transform: capitalize;
-   
-  }
-  
-  .time-line-card3 .text {
-    margin-left:70px;
+}
+
+.time-line-card3 .text {
+    margin-left: 70px;
     margin-right: 8px;
     font-size: 24px;
     color: #FFF;
@@ -50,9 +53,24 @@
     line-height: 101%; /* 33.402px */
     letter-spacing: 0.331px;
     text-transform: capitalize;
+}
 
-    
-  }
+/* Media query for smaller screens */
+@media (max-width: 1023px) {
+    .time-line-card3 .date {
+        font-size: 13px; /* Reduce font size for smaller screens */
+    }
+
+    .time-line-card3 .day {
+        font-size: 98px; /* Reduce font size for smaller screens */
+    }
+
+    .time-line-card3 .text {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        margin-left: 60px; /* Adjust margins for smaller screens */
+        margin-right: 5px;
+    }
+}
 
 
   .time-line-card3 .inner-card{

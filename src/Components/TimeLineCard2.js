@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../Stylesheets/timeLineCard2.css'
+import '../stylesheets/timeLineCard2.css'
 
 const TimeLineCard2 = ({day,month,text}) => {
 

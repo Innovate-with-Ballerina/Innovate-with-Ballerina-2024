@@ -1,7 +1,7 @@
 
 import { useEffect,useState } from 'react';
 
-import '../Stylesheets/ballerina.css'
+import '../stylesheets/ballerina.css'
 import { motion } from 'framer-motion';
 
 export default function BallerinaLoader(params) {

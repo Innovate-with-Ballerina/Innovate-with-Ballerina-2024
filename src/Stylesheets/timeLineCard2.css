@@ -1,5 +1,5 @@
 .time-line-card2 {
-    width: 350px;
+    width: 300px;
     height: 100px;
     flex-shrink: 0;
     border-radius: 11.293px;
@@ -11,22 +11,27 @@
     position: relative;
     font-family:'Space Grotesk', sans-serif ;
   }
+
+  @media (min-width: 1024px) {
+    .time-line-card2 {
+        width: 350px; 
+    }
+  }
   
-  .time-line-card2 .date {
+  
+ .time-line-card2 .date {
     position: absolute;
     top: 4%;
     left: 6%;
-    
-   
     font-size: 14.757px;
     font-style: normal;
     font-weight: 500;
     line-height: 101%; /* 19.955px */
     letter-spacing: 0.198px;
     text-transform: capitalize;
-  }
-  
-  .time-line-card2 .day {
+}
+
+.time-line-card2 .day {
     margin-top: 32.2px;
     margin-right: 50%;
     color: #E9E9E9;
@@ -37,11 +42,10 @@
     line-height: 101%; /* 161.418px */
     letter-spacing: 1.598px;
     text-transform: capitalize;
-   
-  }
-  
-  .time-line-card2 .text {
-    margin-left:50px;
+}
+
+.time-line-card2 .text {
+    margin-left: 50px;
     margin-right: 8px;
     font-size: 24px;
     color: #FFF;
@@ -50,10 +54,24 @@
     line-height: 101%; /* 33.402px */
     letter-spacing: 0.331px;
     text-transform: capitalize;
+}
 
-    
-  }
+/* Media query for smaller screens */
+@media (max-width: 1023px) {
+    .time-line-card2 .date {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
 
+    .time-line-card2 .day {
+        font-size: 110px; /* Reduce font size for smaller screens */
+    }
+
+    .time-line-card2 .text {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        margin-left: 30px; /* Adjust margins for smaller screens */
+        margin-right: 5px;
+    }
+}
 
   .time-line-card2 .inner-card{
     display: flex;

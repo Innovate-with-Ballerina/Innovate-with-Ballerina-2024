@@ -1,3 +1,33 @@
+.timeline-view-container {
+    position: relative;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.background-svg {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Set the SVG in the background */
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.foreground-content {
+    position: relative;
+    z-index: 2; /* Set the timeline and other content in the foreground */
+    
+}
+
+
+
+
 .full-screen-container {
     display: flex;
     flex-direction: column;
@@ -8,7 +38,7 @@
     /* Adjust the gap as needed */
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
 }
 
 
@@ -22,7 +52,7 @@
     border-radius: 10px;
     /* Optional: Add border-radius for rounded corners */
 
-    background: url('../assets/dottedline.svg') no-repeat center 45%;
+    /* background: url('../assets/dottedline.svg') no-repeat center 45%; */
     background-size: auto;
     z-index: 2;
     position: relative;
@@ -42,38 +72,49 @@
     /* Ensure it stays above the background */
 }
 
-/* Define card-specific margins here */
-.card1 {
-    margin: 5% 5% 5% -25%;
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    margin: 5% 0; 
 }
 
-/* top right bottom left*/
-.card2 {
-    margin: -4% 5% 5% 12%;
+
+@media (min-width: 1024px) {
+    .card1 {
+        margin: 5% 5% 5% -25%; /* top right bottom left */
+    }
+    
+    .card2 {
+        margin: -4% 5% 5% 12%; /* top right bottom left */
+    }
+    
+    .card3 {
+        margin: 2% 10% 5% 26%; /* top right bottom left */
+    }
+    
+    .card4 {
+        margin: -1% 10% 5% -13%; /* top right bottom left */
+    }
+    
+    .card5 {
+        margin: 3% 5% 5% 10%; /* top right bottom left */
+    }
+    
+    .card6 {
+        margin: -3% 5% 5% 31%; /* top right bottom left */
+    }
+    
+    .card7 {
+        margin: 0% 5% 5% 0%; /* top right bottom left */
+    }
+    
+    .card8 {
+        margin: -1% 7% 5% 22%; /* top right bottom left */
+    }
 }
 
-.card3 {
-    margin: 2% 10% 5% 26%;
-}
-
-.card4 {
-    margin: -1% 10% 5% -13%;
-}
-
-.card5 {
-    margin: 3% 5% 5% 10%;
-}
-
-.card6 {
-    margin: -3% 5% 5% 31%;
-}
-
-.card7 {
-    margin: 0% 5% 5% 0%;
-}
-
-.card8 {
-    margin: -1% 7% 5% 22%;
+@media (max-width: 768px) {
+    .background-svg {
+        display: none; /* Hide the SVG on small screens */
+    }
 }
 
 .path1 {
@@ -86,19 +127,26 @@
     /* Ensure it stays behind the cards */
 }
 
+/* Default styles for larger screens */
 .text-background {
     color: #292929;
     font-family: "Space Grotesk";
     font-size: 244px;
     font-style: normal;
     font-weight: 700;
-    line-height: 101%;
-    /* 347.44px */
+    line-height: 101%; /* 347.44px */
     letter-spacing: 3.44px;
     text-transform: capitalize;
     opacity: 0.06;
     position: absolute;
+}
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-background {
+        font-size: 140px; /* Reduce font size for smaller screens */
+        letter-spacing: 2px; /* Adjust letter-spacing for smaller font */
+    }
 }
 
 
@@ -150,41 +198,69 @@
     margin-top: 8%;
 }
 
-.header {
-    color: #292929;
 
+.header {
+    position: relative;
+    color: #292929;
     text-align: center;
     font-family: "Space Grotesk";
     font-size: 93px;
     font-style: normal;
     font-weight: 700;
-    line-height: 81%;
-    /* 75.33px */
+    line-height: 81%; /* 75.33px */
     letter-spacing: 0.93px;
     text-transform: capitalize;
 }
 
+
+@media (max-width: 1023px) {
+    .header {
+        font-size: 55px; /* Reduce font size for smaller screens */
+        line-height: 90%; /* Adjust line height for smaller screens */
+    }
+}
+
+/* Default styles for larger screens */
 .para {
     color: #282828;
-
+    justify-content: 'center';
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
     font-family: "Space Grotesk";
     font-size: 27px;
     font-style: normal;
     font-weight: 400;
-    line-height: 109%;
-    /* 29.43px */
+    line-height: 109%; /* 29.43px */
     letter-spacing: 0.27px;
     text-transform: uppercase;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .para {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        line-height: 120%; /* Adjust line height for better readability */
+    }
+}
+
 .buttonSection {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
     gap: 50px;
     margin: 2%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .buttonSection {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 20px; 
+        width: 120%;
+   
+    }
 }
 
 .button-filled, .button-outlined {
@@ -221,4 +297,65 @@
 
 .button-outlined-text {
     color: #000;
+}
+
+.svg1 {
+    margin-left: -8%;
+    margin-bottom: -10%;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; /* Default width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .svg1 {
+        width: 50%; /* Make the SVG smaller */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: -22%; /* Adjust margin for smaller screens */
+        margin-bottom: -5%; /* Adjust margin for smaller screens */
+    }
+}
+
+.svg2 {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 100%; 
+    height: auto; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .svg2 {
+        width: 55%;
+        height: auto;
+        margin: 20% -85% 0% 0%; 
+    }
+}
+.svg3 {
+    position: absolute;
+    top: 30.5%;
+    right: 18.6%;
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .svg3 {
+        top: 48%; /* Adjust position lower */
+        right: 15%; /* Adjust horizontal position */
+        width: 68%; /* Make the SVG smaller */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+.title-area{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
