@@ -1,17 +1,45 @@
 import React from "react";
-
 import TimeLineView from "./views/TimeLineView";
+import Hero from "./components/Hero/hero";
+import ScreenTwo from "./components/ScreenTwo/screen-two";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScreenThree from "./components/ScreenThree/screen-three";
+import View from './views/FaqView';
 
-
+gsap.registerPlugin(ScrollTrigger);
 
 
 function App() {
+  // React.useEffect(() => {
+  //   gsap.to(".hero", {
+  //     scrollTrigger: {
+  //       trigger: ".main-container",
+  //       start: "top top",
+  //       end: "bottom top",
+  //       scrub: true,
+  //     },
+  //     opacity: 0,
+  //     // y: -100,
+  //     ease: "power1.out",
+  //   });
+  // }, []);
+
   return (
-  <div>
-  
-  <TimeLineView />
-  </div>
     
+    <div className="main-container">
+      <div className="hero">
+        <Hero />
+      </div>
+      <div className="screen-two">
+        <ScreenTwo />
+        <ScreenThree />
+      </div>
+      <div className="App">
+        <View />
+      </div>
+    </div>
+
   );
 }
 
