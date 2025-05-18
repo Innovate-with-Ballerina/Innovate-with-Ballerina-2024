@@ -1,36 +1,36 @@
 
-import React, { useState, useEffect } from "react";
-import Hero from "./components/Hero/hero";
+import React, { useEffect } from "react";
+// import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
-import ScreenThree from "./components/ScreenThree/screen-three";
+// import ScreenThree from "./components/ScreenThree/screen-three";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import View from "./views/FaqView";
-import TimeLineView from "./views/TimeLineView";
+// import View from "./views/FaqView";
+// import TimeLineView from "./views/TimeLineView";
 import "./App.css"; 
-import Badges from "./components/Badges/badges";
-import PrizeSection from "../src/components/PrizeSection";
-import StatsSection from "./components/StatsSection";
+// import Badges from "./components/Badges/badges";
+// import PrizeSection from "../src/components/PrizeSection";
+// import StatsSection from "./components/StatsSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   
 
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  // const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Update mouse position for custom cursor
-  const updateMousePosition = (e) => {
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
+  // const updateMousePosition = (e) => {
+  //   setPosition({ x: e.clientX, y: e.clientY });
+  // };
 
-  useEffect(() => {
-    window.addEventListener('mousemove', updateMousePosition);
+  // useEffect(() => {
+  //   window.addEventListener('mousemove', updateMousePosition);
 
-    return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('mousemove', updateMousePosition);
+  //   };
+  // }, []);
 
   useEffect(() => {
     let heroHidden = false;
@@ -83,18 +83,17 @@ function App() {
     <>
       <div className="main-container">
         <div className="hero">
-          <Hero />
+          {/* <Hero /> */}
         </div>
 
         <div className="screen-two">
           <ScreenTwo />
         </div>
         <div className="screen-three">
-          <ScreenThree />
-          {/* <Badges /> */}
+          {/* <ScreenThree /> */}
         </div>
       </div>
-
+{/* 
       <div>
         <StatsSection />
         <PrizeSection />
@@ -111,7 +110,7 @@ function App() {
           top: `${position.y}px`,
           left: `${position.x}px`,
         }}
-      />
+      /> */}
 
 
     </>

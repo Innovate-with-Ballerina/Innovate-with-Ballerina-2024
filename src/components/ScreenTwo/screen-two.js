@@ -138,9 +138,10 @@ const ScreenTwo = () => {
       </style>
       <div style={styles.curve}></div>
       <div style={styles.topdiv} id="logo-cont">
-        <img src="/bal.png" alt="bal" 
+        <img src="/White-primary-25.svg" alt="bal" 
           style={{
             padding: "1em 1em",
+            width: "10em",
           }}
         />
         {/* Update the button's onClick event handler */}
@@ -155,14 +156,14 @@ const ScreenTwo = () => {
             <span>
               <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
             </span>
-            <span style={styles.subHeading}>The </span>
-            <span style={styles.highlight}>Ultimate</span>
+            <span style={styles.subHeading}>Comming</span>{" "}
+            <span style={styles.highlight}>Soon</span>
             {"  "}
             <span>
               <img style={styles.spring} src="/spring.png" alt="spring" />
             </span>
             <br />
-            <span style={styles.subHeading}>
+            {/* <span style={styles.subHeading}>
               C
               <span>
                 <img
@@ -175,11 +176,11 @@ const ScreenTwo = () => {
                 />
               </span>
               ding Challenge
-            </span>
+            </span> */}
           </h1>
           <p style={styles.subText}>
-            Awaken Your Dormant Innovator!<br /> Join With IEEE And WSO2 In A
-            Ballerina Language Exclusive Coding Competition
+            This Website is Currently Under Development<br />
+            Stay Tuned For An Exclusive Ballerina Coding Challenge With IEEE And WSO2!
           </p>
         </div>
       </div>
