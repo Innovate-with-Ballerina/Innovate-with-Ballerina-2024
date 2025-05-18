@@ -7,9 +7,18 @@
    padding: 0.8em 2em;
    border-radius: 1em;
    background: transparent;
-   border: 1px solid #E9E9E9;
+   border: 2px solid #E9E9E9;
 }
-
+.reg-button:hover {
+   background: 
+    linear-gradient(#0A1F25, #0A1F25) padding-box, 
+    linear-gradient(45deg, #FFB34A, #10C3BD) border-box;
+   border-image: linear-gradient(to right, #FBB934, #10C3BD);
+   border-image-slice: 0;
+   font:linear-gradient(to right, #FBB934, #10C3BD);
+   transition: background 0.4s ease, color 0.4s ease;
+   transition: border 0.4s ease, color 0.4s ease;
+}
 /* .reg-button:hover {
    background: linear-gradient(45deg, #0E9F9B, #FFB34A);
    background-size: 200% 100%;

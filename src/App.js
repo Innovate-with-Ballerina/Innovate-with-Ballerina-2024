@@ -81,18 +81,18 @@ function App() {
 
   return (
     <>
-      <div className="main-container">
-        <div className="hero">
+      {/* <div className="main-container"> */}
+        {/* <div className="hero"> */}
           {/* <Hero /> */}
-        </div>
+        {/* </div> */}
 
         <div className="screen-two">
           <ScreenTwo />
         </div>
-        <div className="screen-three">
+        {/* <div className="screen-three"> */}
           {/* <ScreenThree /> */}
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
 {/* 
       <div>
         <StatsSection />

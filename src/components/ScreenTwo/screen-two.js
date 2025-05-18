@@ -39,10 +39,6 @@ const ScreenTwo = () => {
     });
   });
 
-  const handleButtonClick = () => {
-    alert("Register");
-  };
-
   const styles = {
     heading: {
       fontSize: isMobile ? "3rem" : "5rem",
@@ -70,7 +66,7 @@ const ScreenTwo = () => {
     },
     container: {
       width: "100%",
-      height: "110vh",
+      height: "100vh",
       backgroundColor: "#0A1F25",
       color: "white",
       display: "flex",
@@ -99,7 +95,6 @@ const ScreenTwo = () => {
       position: "relative",
       display: "flex",
       flexDirection: "column",
-      padding: 20,
       width: "100%",
     },
   
@@ -137,21 +132,29 @@ const ScreenTwo = () => {
         `}
       </style>
       <div style={styles.curve}></div>
-      <div style={styles.topdiv} id="logo-cont">
-        <img src="/White-primary-25.svg" alt="bal" 
+      {/* <div style={styles.topdiv} id="logo-cont"> */}
+        {/* <img src="/White-primary-25.svg" alt="bal" 
           style={{
             padding: "1em 1em",
             width: "10em",
           }}
-        />
+        /> */}
         {/* Update the button's onClick event handler */}
-        <div className="regBtn">
+        {/* <div className="regBtn">
        <Button onClick={handleButtonClick} />
-       </div>
-      </div>
+       </div> */}
+      {/* </div> */}
 
       <div style={styles.content} id="cont">
         <div style={styles.textContainer} className="text-container">
+          <div>
+            <img src="/White-primary-25.svg" alt="bal" 
+              style={{
+                padding: "0 0 1em 0",
+                width: "14em",
+                }}
+            />
+          </div>
           <h1 style={styles.heading} className="heading">
             <span>
               <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
@@ -179,9 +182,17 @@ const ScreenTwo = () => {
             </span> */}
           </h1>
           <p style={styles.subText}>
-            This Website is Currently Under Development<br />
-            Stay Tuned For An Exclusive Ballerina Coding Challenge With IEEE And WSO2!
+            Stay Tuned For An Exclusive Ballerina Coding Challenge With<br />
+            IEEE Student Branch of UOM And WSO2!
           </p>
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+          }}>
+            <div className="regBtn">
+              <Button className='reg-button' />
+            </div>
+          </div>
         </div>
       </div>
     </div>

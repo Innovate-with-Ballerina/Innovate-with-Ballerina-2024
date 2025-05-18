@@ -37,6 +37,9 @@
   .hero {
     z-index: 1;
   }
+  .screen-two {
+  height: 110vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
