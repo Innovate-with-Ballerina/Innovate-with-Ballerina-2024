@@ -159,7 +159,7 @@ const ScreenTwo = () => {
             <span>
               <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
             </span>
-            <span style={styles.subHeading}>Comming</span>{" "}
+            <span style={styles.subHeading}>Coming</span>{" "}
             <span style={styles.highlight}>Soon</span>
             {"  "}
             <span>
