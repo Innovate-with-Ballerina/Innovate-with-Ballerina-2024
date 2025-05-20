@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
 // import ScreenThree from "./components/ScreenThree/screen-three";
@@ -17,20 +17,20 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   
 
-  // const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Update mouse position for custom cursor
-  // const updateMousePosition = (e) => {
-  //   setPosition({ x: e.clientX, y: e.clientY });
-  // };
+  const updateMousePosition = (e) => {
+    setPosition({ x: e.clientX, y: e.clientY });
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener('mousemove', updateMousePosition);
+  useEffect(() => {
+    window.addEventListener('mousemove', updateMousePosition);
 
-  //   return () => {
-  //     window.removeEventListener('mousemove', updateMousePosition);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('mousemove', updateMousePosition);
+    };
+  }, []);
 
   useEffect(() => {
     let heroHidden = false;
@@ -103,14 +103,14 @@ function App() {
       <div className="App">
         <View />
       </div>
-      <Badges />
+      <Badges />*/}
       <div
         className="custom-cursor"
         style={{
           top: `${position.y}px`,
           left: `${position.x}px`,
         }}
-      /> */}
+      />
 
 
     </>
