@@ -182,8 +182,7 @@ const ScreenTwo = () => {
             </span> */}
           </h1>
           <p style={styles.subText}>
-            Stay Tuned For An Exclusive Ballerina Coding Challenge With<br />
-            IEEE Student Branch of UOM And WSO2!
+            Stay Tuned For An Exclusive Ballerina Coding Challenge!
           </p>
           <div style={{
             display: "flex",
